@@ -1,0 +1,54 @@
+.selectTheme {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+
+  & .greetings {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+
+    & .big {
+      margin: 0;
+      font-family: 'Solitreo', cursive;
+    }
+
+    & p {
+      margin: 0;
+      font-family: 'Roboto Flex', sans-serif;
+    }
+  }
+
+  & .themeSelection {
+    & select {
+      padding: 8px 5px;
+      border: 1px solid #888787;
+      background: #fff;
+      color: #888787;
+      border-radius: 4px;
+    }
+  }
+
+  & .actions {
+    & button {
+      padding: 8px 5px;
+      width: 150px;
+      border: 1px solid #888787;
+      border-radius: 4px;
+      background: #ffff;
+      cursor: pointer;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+
+      &:active {
+        background: #f2f2f2;
+      }
+    }
+  }
+}

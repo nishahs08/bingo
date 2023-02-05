@@ -1,0 +1,14 @@
+.bingoBoard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+  width: 100%;
+  max-width: 520px;
+
+  & .bingoRow {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+}

@@ -1,0 +1,59 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: absolute;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background: rgb(34, 193, 195);
+  background-image: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  & .bingoContainer {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (min-width: 768px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  & .flashCardContainer {
+    @media (min-width: 768px) {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .flashCard {
+      margin: 0;
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Solitreo', cursive;
+    }
+  }
+
+  & .gameProgressContainer {
+    & p {
+      margin: 0;
+      text-align: center;
+      font-family: 'Solitreo', cursive;
+      font-size: 28px;
+    }
+
+    @media (min-width: 768px) {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
